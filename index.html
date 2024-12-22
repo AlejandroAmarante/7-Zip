@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-Zip</title>
+    <link rel="icon" href="./imgs/faviconV2.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="side-nav inter-regular">
+        <img id="logo" src="./imgs/logo.svg" alt="Logo">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">7z Format</a></li>
+            <li><a href="#">LZMA SDK</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">7-max</a></li>
+        </ul>
+        <div id="language-selector">
+            <label for="language-select" id="language-display">Language</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="zh-CN">简体中文</option>
+                <option value="zh-TW">繁體中文</option>
+                <option value="eo">Esperanto</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+                <option value="fa">فارسی</option>
+                <option value="pt-BR">Português (Brasil)</option>
+                <option value="es">Español</option>
+                <option value="th">ไทย</option>
+                <option value="vi">Tiếng Việt</option>
+            </select>
+        </div>
+    </nav>
+    <section class="main-content inter-regular">
+        <section class="about-7zip">
+            <h1>About 7-Zip</h1>
+            <p><strong>7-Zip</strong> is a file archiver with a high compression ratio. It is free, open-source
+                software,
+                with most
+                of its
+                code distributed under the <a href="https://www.gnu.org/licenses/lgpl.html">GNU LGPL license</a>. Some
+                components are covered by the <a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-clause
+                    License</a>, and
+                certain parts
+                are subject to the unRAR license restrictions. For more details, refer to the <a href="#license">7-Zip
+                    license information</a>.
+
+                You can use 7-Zip on any computer, including those in commercial organizations, without needing to
+                register
+                or pay.</p>
+        </section>
+        <section class="download inter-regular">
+            <h1>Download 7-Zip 24.09 (2024-11-29)</h1>
+            <div class="home-downloads">
+                <a href="path/to/your/file.exe" class="download-btn">
+                    <img src="./imgs/windows-fill.svg" class="download-icon" alt="Download Icon">
+                    <div class="file-info">
+                        <span>Download (Windows)</span>
+                        <span>64-bit | .exe | 1.6 MB</span>
+                    </div>
+                </a>
+                <a href="path/to/your/file.exe" class="download-btn">
+                    <img src="./imgs/linux-fill.svg" class="download-icon" alt="Download Icon">
+                    <div class="file-info">
+                        <span>Download (Linux)</span>
+                        <span>64-bit | .tar.xz | 1.6 MB</span>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section class="features">
+            <h1>Features</h1>
+            <ul>
+                <li>High compression ratio in 7z format with LZMA and LZMA2 compression</li>
+                <li>Supported formats:</li>
+                <ul>
+                    <li>Packing / unpacking: 7z, XZ, BZIP2, GZIP, TAR, ZIP and WIM</li>
+                    <li>Unpacking only: APFS, AR, ARJ, CAB, CHM, CPIO, CramFS, DMG, EXT, FAT, GPT, HFS, IHEX, ISO,
+                        LZH,
+                        LZMA, MBR, MSI, NSIS,
+                        NTFS, QCOW2, RAR, RPM, SquashFS, UDF, UEFI, VDI, VHD, VHDX, VMDK, XAR and Z</li>
+                </ul>
+                <li>For ZIP and GZIP formats, 7-Zip provides a compression ratio that is 2-10 % better than the
+                    ratio
+                    provided by PKZip and
+                    WinZip</li>
+                <li>Strong AES-256 encryption in 7z and ZIP formats</li>
+                <li>Self-extracting capability for 7z format</li>
+                <li>Integration with Windows Shell</li>
+                <li>Powerful File Manager</li>
+                <li>Powerful command line version</li>
+                <li>Plugin for FAR Manager</li>
+                <li>Localizations for 87 languages</li>
+            </ul>
+
+        </section>
+        <section class="screenshots">
+            <h1>Screenshots</h1>
+            <div class="screenshots-container">
+                <img src="./imgs/screenshots/1.webp" alt="Screenshot 1" class="thumbnail">
+                <img src="./imgs/screenshots/2.webp" alt="Screenshot 2" class="thumbnail">
+                <img src="./imgs/screenshots/3.webp" alt="Screenshot 3" class="thumbnail">
+            </div>
+        </section>
+
+    </section>
+    <section class="changelog inter-regular">
+        <header>
+            <h1>Changelog</h1>
+        </header>
+        <div class="changelog-container">
+            <a class="changelog-item">
+                <h2 class="changelog-version">Version 24.09 (2024-11-29)</h2>
+                <ul class="changelog-features">
+                    <li>The default dictionary size values for LZMA/LZMA2 compression methods were increased.</li>
+                    <li>The default dictionary size values for 32-bit versions of LZMA/LZMA2 don't exceed 64 MB.</li>
+                    <li>7-Zip now can calculate the following hash checksums: SHA-512, SHA-384, SHA3-256 and MD5</li>
+                    <li>...And More!</li>
+                </ul>
+            </a>
+            <a class="changelog-item">
+                <h2 class="changelog-version">Version 24.09 (2024-11-29)</h2>
+                <ul class="changelog-features">
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                </ul>
+            </a>
+            <a class="changelog-item">
+                <h2 class="changelog-version">Version 24.09 (2024-11-29)</h2>
+                <ul class="changelog-features">
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                </ul>
+            </a>
+            <a class="changelog-item">
+                <h2 class="changelog-version">View More on SourceForge</h2>
+            </a>
+    </section>
+    <div id="imageModal" class="modal">
+        <span class="close" id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+    <footer class="inter-regular">Copyright (C) 2024 Igor Pavlov. Site redesign by Alejandro Amarante.</footer>
+</body>
+
+</html>
